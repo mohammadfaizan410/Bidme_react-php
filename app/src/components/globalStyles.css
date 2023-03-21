@@ -1,0 +1,54 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color:#191923 ;
+}
+
+.container-padded{
+    padding: 2% 3%;
+}
+
+.input-item{
+    margin-top: 20px;
+    border: none;
+    background-color: lightgray;
+    padding: 1rem;
+    width: 50%;
+    border: 1px solid lightgrey;
+}
+.input-item:focus{
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #FB6107;
+    box-shadow: 0 0 10px #FB6107;
+
+}
+
+.submit-btn{
+    border: none;
+    padding: 15px;
+    background-color: #79AEA3;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-primary{
+    text-align: center;
+    padding: 1% 2%;
+}
+
+.validation-error{
+    font-size: 15px;
+    color: red;
+    
+}
+

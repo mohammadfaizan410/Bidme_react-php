@@ -1,0 +1,37 @@
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    color: #191923;
+}
+
+.contactLeft-title{
+    font-size: 60px;
+}
+.contactLeft-desc{
+    font-size: 20px;
+}
+.contactLeft-email{
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.contact-left{
+    width: 50%;
+}
+
+.contact-right{
+    width: 40%;
+    border: 1px solid black;
+}
+.contactLeft-emailValue{
+    font-size: 15px;
+}
+
+.contactLeft-link{
+    text-decoration: none;
+    color: #191923;
+}

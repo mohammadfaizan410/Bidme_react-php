@@ -1,0 +1,82 @@
+
+.navbar-container{
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    background-color: white;
+}
+
+.navbar-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-name{
+    padding-top: 40px;
+}
+
+.logo-container:hover{
+    cursor: pointer;
+}
+
+.navitem-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    display: flex;
+    min-width: 200px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item:hover{
+    background-color:#191923;
+    color: white;
+    cursor: pointer;
+}
+
+
+.nav-item-clicked{
+    background-color:#191923;
+    color: white;
+}
+
+
+
+
+.navaccount-container{
+    display: flex;
+    align-items: center;
+}
+.navaccount-container:hover{
+    cursor: pointer;
+}
+
+.loggedIn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-btn{
+    border: none;
+    padding: 10px;
+    background-color: #79AEA3;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+}

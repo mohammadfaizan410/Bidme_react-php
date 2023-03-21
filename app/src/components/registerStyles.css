@@ -1,0 +1,21 @@
+.register-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.conditions{
+    display: flex;
+    font-size: 15px;
+}
+
+.register-celeb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
