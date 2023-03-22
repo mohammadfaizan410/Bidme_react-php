@@ -33,7 +33,7 @@ Contributions to this project are welcome. If you would like to contribute, plea
 4. Push your changes to your forked repository.
 5. Create a pull request to merge your changes into the main repository.
 
-##Registration Key
+## Registration Key
 b8c3ef96f10058960113e5d151d057b6ce9eb035a81d896e218de00dab6933f9
 
 ## License
