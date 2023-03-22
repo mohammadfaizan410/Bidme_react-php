@@ -33,6 +33,18 @@ Contributions to this project are welcome. If you would like to contribute, plea
 4. Push your changes to your forked repository.
 5. Create a pull request to merge your changes into the main repository.
 
+## Database Initialization
+Log in to your phpMyAdmin account and select the database you want to import the file into.
+
+Click on the "Import" tab located at the top of the screen.
+
+Click on the "Choose File" button and select the bidme_db.sql file from bidme_db
+
+
+Wait for the import to complete. This may take some time depending on the size of the file and the performance of your server.
+
+Once the import is complete, you will receive a notification indicating that the process was successful.
+
 ## Registration Key
 b8c3ef96f10058960113e5d151d057b6ce9eb035a81d896e218de00dab6933f9
 
