@@ -17,7 +17,7 @@ function Products() {
             method: "GET",
             url: "http://localhost/bidMe_backend/setProducts.php",
             
-            success: async function (data) {
+            success: function (data) {
                 if (data === "no products") {
                     setError("No products to show at the moment!")
                 }
@@ -40,9 +40,12 @@ function Products() {
         setBidAmount(e.target.value);
     };
     
-    const handleNewBid = (e, latest_bid) => {
+    const handleNewBid = (e, latest_bid, isOver) => {
         setBidError("");
-        if (bidAmount === "") {
+        if (isOver) {
+            setBidError("Bidding has ended for this piece");
+        }
+        else if (bidAmount === "") {
             setBidError("Bid cannot be empty")
         }
         else if (!((/^\d+$/).test(bidAmount))) {
@@ -85,9 +88,9 @@ function Products() {
     }, []);
   
   return (
-      <div className='container-padded products-container'>
+      <div className='container-padded products-container'>          
           {error.length > 0 ? <div className='validation-error'>{error}</div> : <div style={{ display: "flex", justifyContent: "center" }}>
-              <div className='product-list'>{ productList.length > 0 ? productList.map((product, key) => {
+              <div className='product-list' style={bidError ? { opacity: "0.4" } : { opacity: "1" }} >{productList.length > 0 ? productList.map((product, key) => {
             return (
                 <ProductCard
                     key={key}
@@ -96,16 +99,17 @@ function Products() {
                     description={product.description}
                     latest_bid={product.latest_bid}
                     bidAmount= {bidAmount}
-                    image="https://ibb.co/3C42dJr"
                     onChange={handleChange}
                     handleNewBid={handleNewBid}
+                    endDate={product.end_date}
+                    image_src= {product.image_src}
                 />
             )
               }) : ""}</div>
-              {bidError ? <div className='bidError-container'>
+              {bidError ? <div className='bidError-container'><div className='bidError-inner'>
                   <p className='validation-error'>{bidError}</p>
                   <button className='submit-btn' onClick={handleError}>Close</button>
-              </div> : ""}
+              </div></div> : ""}
               </div>}
     </div>
   )

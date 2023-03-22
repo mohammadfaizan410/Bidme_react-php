@@ -1,0 +1,78 @@
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    color: #191923;
+}
+
+.contactLeft-title{
+    font-size: 60px;
+}
+.contactLeft-desc{
+    font-size: 20px;
+}
+.contactLeft-email{
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.contact-left{
+    width: 40%;
+}
+
+.contact-right{
+    width: 40%;
+    margin-top: 50px;
+}
+.contactLeft-emailValue{
+    font-size: 15px;
+}
+
+.contactLeft-link{
+    text-decoration: none;
+    color: #191923;
+}
+
+
+.contact-rightInput{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(235, 235, 235) ;
+    background-color: rgb(235, 235, 235);
+    outline: none;
+}
+.contact-rightInput:focus{
+    border: 1px solid lightblue;
+}
+.contact-rightBtn{
+    border: none;
+    padding: 15px;
+    background-color: #79AEA3;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 105%;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 1200px){
+.contact-container{
+    display: block;
+}
+
+.contact-left{
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-right{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+}

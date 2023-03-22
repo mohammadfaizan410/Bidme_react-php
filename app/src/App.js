@@ -8,7 +8,6 @@ import Register from "./components/Register";
 import { StoreProvider } from "easy-peasy";
 import { store } from "./state/store";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
       </BrowserRouter>
       </StoreProvider>

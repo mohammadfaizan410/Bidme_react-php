@@ -1,6 +1,6 @@
 import React from 'react'
-import "./globalStyles.css"
-import "./home.css";
+import "./styles/globalStyles.css"
+import "./styles/home.css";
 
 
 function Home() {
@@ -11,9 +11,11 @@ function Home() {
     <div className='container-padded'>
 
       <div className='home-top'>
-        <img className='home-topImg' src={require('./Antiques.jpg')} alt="" />
-        <h3 className='home-topTitle'>A one stop shop for bidding on rare items </h3>
+        <img className='home-topImg' src={require('./images/Antiques.jpg')} alt="" />
+        <h3 className='home-topTitle'>Unleash your inner auctioneer </h3>
         <h3 className='home-Title'>Bidme</h3>
+        <h3 className='home-TitleMobile'>Bidme</h3>
+        <h3 className='home-topTitleMobile'>Unleash your inner auctioneer</h3>
         <button className='home-galleryBtn' onClick={handleScroll}>Show Gallery</button>
 
         <div id='middle'>
@@ -21,25 +23,25 @@ function Home() {
         <h3 className='text-primary home-galleryTitle'>Our Gallery</h3>
       <div className='home-middle' >
         <div className='home-imgContainer' >
-          <img className='home-middleImg' src={require('./music.png')} alt="" />
+          <img className='home-middleImg' src={require('./images/music.png')} alt="" />
         </div>
         <div className='home-imgContainer'>
-          <img className='home-middleImg' src={require('./mangal.jpg')} alt="" />
+          <img className='home-middleImg' src={require('./images/mangal.jpg')} alt="" />
         </div>
         <div className='home-imgContainer'>
-          <img className='home-middleImg' src={require('./cloth.jpeg')} alt="" />
+          <img className='home-middleImg' src={require('./images/cloth.jpeg')} alt="" />
         </div>
       </div>
       </div>
       <div className='home-middle'>
         <div className='home-imgContainer'>
-          <img className='home-middleImg' src={require('./sculpture.jpg')} alt="" />
+          <img className='home-middleImg' src={require('./images/sculpture.jpg')} alt="" />
         </div>
         <div className='home-imgContainer'>
-          <img className='home-middleImg' src={require('./davinci.jpg')} alt="" />
+          <img className='home-middleImg' src={require('./images/davinci.jpg')} alt="" />
         </div>
         <div className='home-imgContainer'>
-          <img className='home-middleImg' src={require('./Antiques.jpg')} alt="" />
+          <img className='home-middleImg' src={require('./images/Antiques.jpg')} alt="" />
         </div>
       </div>
         </div>

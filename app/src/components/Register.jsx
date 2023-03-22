@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import "./globalStyles.css"
-import "./registerStyles.css"
+import "./styles/globalStyles.css"
+import "./styles/registerStyles.css"
 import { Link } from 'react-router-dom'
 import { MdCelebration } from 'react-icons/md'
 import jQuery from 'jquery'

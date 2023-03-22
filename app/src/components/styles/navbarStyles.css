@@ -79,4 +79,42 @@
     cursor: pointer;
     width: 100px;
     text-align: center;
+    margin-left: 10px;
 }
+/* mobile */
+
+.navbar-innerMobile{
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+    display: none;
+}
+
+.navitem-containerMobile{
+    display: flex;
+}
+
+.nav-itemMobile{
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.loginoptions-containerMobile{
+    font-size: 10px;
+}
+.logout-btnMobile{
+    background-color: #79AEA3;
+    cursor: pointer;
+    text-align: center;
+    width: 80%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .navbar-inner{
+        display: none;
+    }
+    .navbar-innerMobile{
+        display: flex;
+    }
+  }

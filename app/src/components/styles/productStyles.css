@@ -14,6 +14,7 @@
 .product-img{
     margin-top: 10px;
     width: 90%;
+    aspect-ratio: 2/2.5;
 }
 
 .product-desc{
@@ -26,18 +27,34 @@
     display: flex;
     position: absolute;
     z-index: 1;
-    border: 1px solid black;
-    background-color: white;
-    top: 40%;
+    top: 50%;
     padding: 30px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
+.bidError-inner{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid black;
+    padding: 50px;
+    
+}
 .product-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 87%;
 }
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+   .productcard-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+  }

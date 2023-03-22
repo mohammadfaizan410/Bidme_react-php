@@ -11,12 +11,13 @@
 
 .home-topTitle{
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     position: absolute;
-    top : 25%;
+    top : 28%;
     left: 20%;
     color: white;
-    z-index: 1;
+    z-index: 2;
+    text-shadow: 1px 1px 6px white;
 }
 .home-Title{
     font-family: 'Montserrat', sans-serif;
@@ -45,7 +46,6 @@
 }
 
 .home-middle{
-    margin-top: 40px;
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -67,4 +67,53 @@
 .home-galleryTitle{
     text-align: center;
     font-size: 50px;
+}
+.home-TitleMobile{
+    display: none;
+}
+
+.home-topTitleMobile{
+    display: none;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 1200px){
+   .home-topImg{
+    display: none;
+   }
+   .home-topTitle{
+    display: none;
+   }
+   .home-galleryBtn{
+    display: none;
+   }
+   .home-Title{
+    display: none;
+   }
+   .home-middle{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .home-TitleMobile{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    text-align: center;
+   }
+
+   .home-topTitleMobile{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: center;
+   }
+   .home-imgContainer{
+    margin: 0;
+    width: 400px;
+   }
 }
